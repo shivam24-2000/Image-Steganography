@@ -6,10 +6,10 @@ The goal of steganography is to hide a message in plain sight. BPCS is a method 
 
 First, we want to embed a text file in a vessel image.
 
-`$ python -m bpcs.bpcs encode -i examples/vessel.png -m examples/message.txt -o examples/encoded.png`
+`$ python3 -m bpcs.bpcs encode -i examples/vessel.png -m examples/message.txt -o examples/encoded.png`
 
 Now, given the encoded image, we want to recover the message hidden inside it.
 
-`$ python -m bpcs.bpcs decode -i examples/encoded.png -a 0.45 -o examples/message_decoded.txt`
+`$ python3 -m bpcs.bpcs decode -i examples/encoded.png -a 0.45 -o examples/message_decoded.txt`
 
 The output, message_decoded.txt, should be the same as message.txt.
